@@ -1,0 +1,65 @@
+Big O
+
+- Big O is the language and metric we use to describe the efficiency of algorithms.
+- E.g., Types of runtime (time complexity) - O(N), O(2^N)
+
+Algorithm run time notations
+
+- Best case O(N)
+- Average case O(N log N)
+- Worst case O(N^2)
+
+Big O, Big Theta and Big Omega
+
+- Big O: It is a complexity that is going to be less or equal to the worst case. E.g. Maximum 10 seconds to execute algorithm, execution will never exceed 10 seconds.
+
+- Big Omega - It is a complexity that is going to be at least more than the best case. E.g., best case takes 2 seconds, will not take less than 2 seconds.
+
+- Big Theta - It is a complexity that is within bounds of the worst and the best cases.
+
+Space Complexity
+
+- Measure of the amount of working storage an algorithm needs. How much memory in the worst case is needed at any time of the algorithm.
+E.g., stack
+
+Drop Constants and Non-Dominant Terms
+
+O(2N) --> O(N)
+O(N^2 + N) --> O(N^@)
+O(N + logN) --> O(N)
+As N approaches infinity, constant factors are not really a big deal.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

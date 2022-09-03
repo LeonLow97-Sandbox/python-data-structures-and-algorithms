@@ -1,0 +1,72 @@
+What are Data Structures?
+
+- Data Structures are different ways of organizing data on your computer, that can be used effectively.
+- Unorganized --> Organized
+
+What is an Algorithm?
+
+- Set of steps to accomplish a task.
+- Structure --> Algorithm
+- Set of rules for a computer program to accomplish a task.
+- Input Data --> Calculation --> Stop when answer found
+
+What makes a good algorithm?
+
+1. Correctness
+2. Efficiency
+
+Why are Data Structures and Algorithms important?
+
+- Input data --> Processing --> Output
+- Processing: Data Structures and Algorithms
+- To develop memory and time efficient applications.
+
+Why are Data Structures and Algorithms in interviews?
+
+- Problem solving skills (memory management technique).
+- Fundemantal concepts of programming in limited time.
+
+Types of Data Structures:
+
+1. Primitive
+- Integer, Float, Character, String, Boolean
+
+2. Non-Primitive (user-defined)
+- Linear: static (Array) or Dynamic (Linked List, Stack, Queue)
+- Non-linear: Tree and Graph
+
+Types of Algorithms:
+
+1. Simple recursive
+- acts as a loop
+
+2. Divide and conquer
+- Divide the problem into smaller subproblems of the same type, and solve these subproblems recursively.
+- Combine the solutions to the subproblems into a solution to the original problem.
+- Example: Quick sort and merge sort
+
+3. Dynamic programming algorithms
+- Work based on memorization (finds past result and use them, for optimisation)
+- To find the best solution
+
+4. Greedy algorithms
+- Take the best we can without worrying about future consequences.
+- Hope that by choosing a local optimum solution at each step, we will end up at a global optimum solution.
+
+5. Brute force algorithms
+- It simply tries all possibilies until a satifactory solution is found.
+
+6. Randomized algorithms
+- Use a random number at least once during the computation to make a decision.
+
+
+
+
+
+
+
+
+
+
+
+

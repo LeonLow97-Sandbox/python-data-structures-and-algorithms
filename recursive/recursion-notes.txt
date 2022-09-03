@@ -1,0 +1,84 @@
+What is Recursion?
+
+- Recursion = a way of solving a problem by having a function calling itself.
+- Example: Russian doll (problem gets smaller and smaller)
+- Performing the same operation multiple times with different inputs.
+- In every step, we try smaller inputs to make the problem smaller (easy to find solution with a smaller problem).
+- Base condition is needed to stop the recursion, otherwise infinite loop will occur.
+
+Why Recursion?
+
+- Recursive thinking is really important in programming and it helps you break down big problems into smaller ones
+and easier to use.
+- Sub-problems must be similar in nature, otherwise cannot use recursion.
+- The prominent usage of recursion in data structures like trees and graphs.
+- It is used in many algorithms (divide and conquery | greedy | dynamic programming).
+- Interviews.
+
+When to choose Recursion?
+> If you can divide the problem into similar sub-problems
+> Design an algorithm to compute nth
+> Write code to list the n
+> Implement a method to compute all
+> Practice
+
+How Recursion works?
+- A method calls itself
+- Exit from infinite loop
+
+def recursionMethod(parameters);
+    if exit from condition satisfied:
+        return some value
+    else:
+        recursionMethod(modified parameters)
+
+When to use recursion?
+
+- When we can easily breakdown a problem into similar subproblem.
+- When we are fine with extra overhead (both time and space) that comes with it.
+- When we need a quick working solution instead of efficient one.
+- When we traverse a tree.
+- When we use memoization in recursion.
+
+When avoid it?
+
+- If time and space complexity matters for us.
+- Recursion uses more memory. If we use embedded memory, e.g. an application that takes more memory in the phone is not efficient.
+- Recursion can be slow.
+
+How to write recursion in 3 steps?
+
+1. Recursive case - the flow
+2. Base case - the stopping criterion
+3. Unintentional case - the constraint
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

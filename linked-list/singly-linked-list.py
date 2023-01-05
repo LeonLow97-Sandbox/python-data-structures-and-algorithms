@@ -11,11 +11,12 @@ class SinglyLinkedList:
         self.length = 0
 
     # to print out the singly linked list
-    def __iter__(self):
+    def print_list(self):
         node = self.head
         while node is not None:
-            yield node
+            print(node.val, end=' -> ')
             node = node.next
+        print()
     
     def push(self, val):
         newNode = Node(val)
@@ -71,6 +72,53 @@ class SinglyLinkedList:
             self.head = newNode
         self.length += 1
         return self
+    
+    def get(self, index):
+        if self.head is None:
+            return False
+        if index < 0 or index > self.length:
+            return False
+        count = 0
+        current = self.head
+        while count != index: 
+            current = current.next
+            count += 1
+        return current
+    
+    def set(self, index, val):
+        node = self.get(index)
+        if not node:
+            return False
+        node.val = val
+        return True
+    
+    def remove(self, index):
+        if index < 0 or index > self.length:
+            return False
+        if index == self.length - 1:
+            return self.pop()
+        if index == 0:
+            return self.shift()
+        prevNode = self.get(index - 1)
+        removeNode = self.get(index)
+        prevNode.next = removeNode.next
+        self.length -= 1
+        return removeNode
+    
+    def reverse(self):
+        # swap head and tail
+        node = self.head
+        self.head = self.tail
+        self.tail = node
+
+        next = None
+        prev = None
+        while node is not None:
+            next = node.next
+            node.next = prev
+            prev = node
+            node = next
+        return self
 
 
 SLL = SinglyLinkedList()
@@ -83,8 +131,14 @@ SLL.tail = node2
 
 SLL.push(3)
 SLL.push(4)
-print(SLL.shift().val)
+print("Shift", SLL.shift().val)
 SLL.unshift(10)
+print("Get", SLL.get(0).val)
+print("Set", SLL.set(0, 100000))
+SLL.remove(2)
 
-print([node.val for node in SLL])
+SLL.push(5)
+SLL.push(6)
+print("Reverse", SLL.reverse())
 
+SLL.print_list()
